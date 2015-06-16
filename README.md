@@ -46,6 +46,8 @@ It is possible to do some actions like queries on the RDF graph (insert, delete)
 For the first time, you need to load a RDF graph named data-init.rdf, in the data directory.
 This is a configuration file and it allows you to have a first account as administrator "MASTER" (all permissions).
 
+Don't forget to check the .htaccess if you are running the website on your personal computer
+
 It is possible to load it from http://localhost:8080/load or using the terminal : 
 
 $ "curl -T PATH_TO_WEBSITE/data-init.rdf 'http://localhost:8080/data/database.rdf'
@@ -77,7 +79,7 @@ Permissions :
 - RW : Read Write, can read all annotations and texts and edit/delete annotations
 - R : Read only, can see the text and annotations
 
-### Texts et annotations
+### Texts and annotations
 
 - Les textes
 To select a text, the user has to click on "Annoter". If his permission is RW, ARW or MASTER then
