@@ -1,0 +1,187 @@
+section h2 {
+    font-size: 24px;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    padding: 22px 0;
+    color: #215896;
+    text-align: center;
+    text-decoration: underline;
+}
+#workspace {
+    min-width: 940px;
+    margin-bottom: 350px;   /* Empêcher de passer sur le footer */
+}
+#annotespace {
+	font-size: 20px;
+	float: left;
+	width: 700px;
+	text-align: justify;
+    margin-right: 25px;
+}
+#explication_annotation {
+    background-color: #f8f8f8;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 30px;
+    width: 940px;
+}
+#floatForm {
+    position: relative;
+    top: 0;
+    margin: 0;
+    z-index: 250;
+}
+#form_annot_select {
+    padding: 5px;
+    position: relative;
+    float:left;
+    width: 200px;
+    margin:0;
+}
+#form_annot_select input, #form_annot_select textarea {
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+}
+#form_annot_select textarea {
+    height: 100px;
+    font-size: 13px;
+    font-family: "Consolas", "Courier New", Verdana, Arial, Helvetica, sans-serif;
+}
+#form_annot_select label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#form_annot_select p {
+    padding: 0 0 0px;
+}
+#annot_info {
+    font-size:13px;
+    color:green;
+}
+#annot_info p {
+    text-align: left;
+}
+.arrow-left {
+	position: absolute;
+	top: 8px;
+	left: -8px;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #CCCCCC;
+	border-left: 2px solid #CCCCCC;
+	transform: rotate(-45deg);
+}
+#textContent {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+#backHighlight {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+#annotFail {
+    color: red;
+    display: none;
+}
+#annotSuccess {
+    color: green;
+    display: none;
+}
+
+
+/* truc que js clone */
+
+.highlight-annot {
+	position: absolute;
+	background-color: rgba(30, 255, 30, 0.3);
+}
+.highlight-tmp {
+	position: absolute;
+	background-color: rgba(30, 30, 255, 0.3);
+}
+
+.annotInfos {
+    /* a conserver pour js ! */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    /* fin js */
+    z-index: 150; /* pour faire passer au dessus/dessous */
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+    width: 400px;
+    padding: 5px;
+    background-color: #FFF;
+    border: 2px solid #CCCCCC;
+}
+.annotInfos .authorName a {
+	color: #555;
+	font-style: italic;
+}
+
+#annotInfosModel {
+	display: none;
+}
+
+.annotFocused {
+    z-index: 200; /* pour faire passer au dessus/dessous */
+    border-color: rgba(255, 30, 30, 0.47);
+    box-shadow: #AAA 0 0 10px;
+}
+.annotHighlightFocused {
+    background-color: rgba(255, 30, 30, 0.3);
+}
+.delAnnot {
+    float: right;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.editAnnot {
+    float: right;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.cancelAnnot {
+    float: right;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: none;
+    font-size: 12px;
+}
+.annotBodyForm {
+    display: none;
+}
+.contentEdit {
+    display: inline;
+    padding: 8px;
+    margin-top:10px;
+    border: 3px solid #CCC;
+}
+.droit {
+    background: linear-gradient(to bottom, #33BDEF 5%, #019AD2 100%);
+    font-family: Arial, sans-serif;
+    font-size:13px;
+    font-weight: bold;
+    color: #FFF;
+    border: 1px solid #057ECE;
+    border-radius: 6px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow:0 1px 0 #666976;
+    padding: 0 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: auto;
+}

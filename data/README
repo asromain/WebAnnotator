@@ -1,0 +1,1 @@
+Faire un chmod -R 777 sur le dossier pour que PHP puisse écrire des fichiers dedans.

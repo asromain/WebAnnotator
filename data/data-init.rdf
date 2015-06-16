@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:format="http://www.w3.org/ns/formats/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sd="http://www.w3.org/ns/sparql-service-description#" xmlns:void="http://rdfs.org/ns/void#">
+  <rdf:Description rdf:about="http://localhost/TER/private/desc/view/user_admin">
+    <ns0:sha1 xmlns:ns0="http://xmlns.com/foaf/0.1/">dd94709528bb1c83d08f3088d4043f4742891f4f</ns0:sha1>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/TER/private/desc/view/user_admin">
+    <ns0:nick xmlns:ns0="http://xmlns.com/foaf/0.1/">admin</ns0:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/TER/private/desc/view/user_admin">
+    <ns0:permission xmlns:ns0="http://xmlns.com/foaf/0.1/">MASTER</ns0:permission>
+  </rdf:Description>
+</rdf:RDF>
