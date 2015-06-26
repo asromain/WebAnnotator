@@ -1,7 +1,6 @@
 node_modules/
 .idea/
-text/
-/text
+
 
 data/data-1*.rdf
 

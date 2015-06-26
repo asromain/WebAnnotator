@@ -9,7 +9,7 @@
 
 Options +FollowSymLinks
 RewriteEngine on
-RewriteBase /
+RewriteBase /WebAnnotator/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [L]
 
