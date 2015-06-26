@@ -52,6 +52,9 @@ It is possible to load it from http://localhost:8080/load or using the terminal 
 
 $ "curl -T PATH_TO_WEBSITE/data-init.rdf 'http://localhost:8080/data/database.rdf'
 
+account : admin 
+password : adminadmin
+
 
 ## Web application : 
 
