@@ -16,9 +16,9 @@ function getBaseUrl() {
 }
 
 function sendAnnot() {
-	console.log($('#target').val());
-	console.log($('#content').val());
-	console.log($('#offset').val());
+	// console.log($('#target').val());
+	// console.log($('#content').val());
+	// console.log($('#offset').val());
 	$.ajax({
 		url: getBaseUrl()+'/annotation/add/',
 		type : 'POST',
