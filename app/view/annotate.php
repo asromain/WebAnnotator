@@ -18,7 +18,7 @@
 	<div id="workspace">
 		<div id="annotespace">
 			<div id="backHighlight"></div>
-			<div id="textContent"><?php echo $text; ?></div><!-- important ne pas mettre de l'indentation dans cette balise ! -->
+			<div id="textContent"><?php echo htmlentities($text); ?></div><!-- important ne pas mettre de l'indentation dans cette balise ! -->
 		</div>
 		<?php if($_SESSION['user_infos']['droit'] != 'R') {?>
 		<div id="floatForm">
@@ -50,5 +50,7 @@
 		<div class="clear_float"></div>
 
 	</div>
+
+	<div id="urlForJs" style="display: none;"><?php echo $urlForJs; ?></div>
 
 <?php require_once 'include/footer.php'; ?>

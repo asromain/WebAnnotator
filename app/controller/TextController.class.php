@@ -165,6 +165,8 @@ class TextController extends Controller
 
 				// $text = parseText($sparql, $text, $i->current()->identifier->getValue());
 				$this->set('text', $text);
+				$urlForJs = BASE_URL;
+				$this->set('urlForJs', $urlForJs);
 				$this->set('textTitle', $textTitle);
 				$this->set('title', 'Annoter un texte');
 

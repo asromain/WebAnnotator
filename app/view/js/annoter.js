@@ -4,12 +4,15 @@ $(document).ready(function () {
 });
 
 function getBaseUrl() {
+	/*
 	var protocol = location.href.split( '/' )[0];
 	var domainName = location.href.split( '/' )[2];
 	if (domainName === 'localhost') {
-		domainName += '/TER/private';
+		domainName += '/WebAnnotator';
 	}
 	return protocol+'//'+domainName;
+	*/
+	return $('#urlForJs').text();
 }
 
 function sendAnnot() {
