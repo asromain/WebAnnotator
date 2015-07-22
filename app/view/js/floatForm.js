@@ -121,16 +121,18 @@ function highlight(strText, startOffset, endOffset, identifier) {
 	var strIn = strText.substring(startOffset,endOffset);
 	var strAfter = strText.substring(endOffset);
 
-	var newStrText = strBefore+lineWrap('#textContent', strBefore, strIn)+strAfter;
+	var newStrText = dothetrick(strBefore)+lineWrap('#textContent', dothetrick(strBefore), dothetrick(strIn))+dothetrick(strAfter);
 
 	$('#textContent').html(newStrText);
 
 	cloneOnBackground('.tmpSize', identifier);
 
-	$('#textContent').html(strText);
+	$('#textContent').text(strText);
 }
 
-
+function dothetrick(str) {
+    return String(str).replace(/</g, '>').replace(/>/g, '>');
+}
 
 
 function cloneOnBackground(selector, identifier) {

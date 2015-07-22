@@ -7,6 +7,7 @@ section h2 {
     text-decoration: underline;
 }
 #workspace {
+    position: relative;
     min-width: 940px;
     margin-bottom: 350px;   /* Empêcher de passer sur le footer */
 }
@@ -26,8 +27,9 @@ section h2 {
     width: 940px;
 }
 #floatForm {
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 720px;
     margin: 0;
     z-index: 250;
 }
@@ -110,8 +112,9 @@ section h2 {
 .annotInfos {
     /* a conserver pour js ! */
     position: absolute;
-    top: 0;
-    left: 0;
+    
+    left: 0px;
+    top: 0px;
     margin: 0;
     /* fin js */
     z-index: 150; /* pour faire passer au dessus/dessous */
